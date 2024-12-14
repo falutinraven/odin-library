@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  background-color:rgb(228, 241, 251);
+}
+
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+#library-display{
+  margin: 10px 20px;
+  padding: 10px 4rem;
+  background-color: rgb(169, 140, 220);
+  border-radius: 20px;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 1fr 2fr 1fr;
+
+  &:nth-child(even) {
+    background-color: rgb(153, 105, 207);
+  }
+}
+
+/* #library-display > div:first-child{
+  font-weight: bold;
+} */
+
+dialog {
+  z-index: 10;
+  margin-top: 10px;
+  background: rgba(240, 158, 50, 0.841);
+  border: none;
+  border-radius: 1rem;
+
+}
+  dialog::backdrop{
+    background-color: hsla(250, 50%, 66%, 0.25);
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Jairo's Library</h2>
+    <!-- <div class="legend">
+      <div class="book">
+        <p class="book-name">Book Name</p>
+        <p class="book-author">Book Author</p>
+        <p class="book-pages">Book Pages</p>
+        <p class="book-is-read">Is Book Read</p>
+        <p class="remove-book">Remove from library</p>
+      </div>
+    </div> -->
+  <div id="library-display">
+  </div>
+  <button id="new-book">New Book</button>
+  <dialog>
+    <form method="dialog" id="new-book-form">
+      <div>
+        <label for="name">Book Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div>
+        <label for="author">Book Author:</label>
+        <input type="text" id="author" name="author">
+      </div>
+      <div>
+        <label for="pages">Pages In Book:</label>
+        <input type="number" id="pages" name="pages" min="1">
+      </div>
+      <div>
+        <label for="read">Have you read this book:</label>
+        <input type="checkbox" id="read" name="is-read">
+      </div>
+      <input id="submit-book" type="submit" form="new-book-form">Submit</button>
+    </form>
+  </dialog>
+<script src="main.js"></script>
+</body>
+</html>
